@@ -1,0 +1,38 @@
+.about_btn{
+    
+} 
+.btn_hover{
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark;
+    font-weight: 500;
+    padding: 4px 35px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    border-radius: 0px;
+    box-shadow: none;
+    &:hover{
+        background: $light_blue;
+        color: #fff;
+    }
+}
+
+.view_btn{
+    background: #fff;
+    &:hover{
+        border-color: $dark;
+        background: $dark;
+    }
+}
+
+.btn_hover_two{
+    background: $light_blue;
+    color: #fff;
+    border-color: $light_blue;
+    &:hover{
+        background: transparent;
+        color: $light_blue;
+    }
+}

@@ -1,0 +1,88 @@
+/*============ banner_area css =============*/
+.banner_area{
+    min-height: 680px;
+    background: linear-gradient(to right, rgba(4, 9, 30, .80), rgba(4, 9, 30, .80)), url('../image/banner.jpg');
+    background-size: cover;
+}
+.banner_content{
+    color: #fff;
+    h6{
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    h1{
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: 700;
+        padding: 8px 0px 20px;
+    }
+    .btn_hover_two{
+        margin-top: 25px;
+    }
+}
+
+/*=============Blog Banner css =============*/
+.blog_banner{
+    min-height: 680px;
+	overflow: hidden;
+    position: relative;
+    background: #04091e !important;
+    background-image: transparent !important;
+    z-index: 1;
+	.bg-parallax{
+		background: url(../image/banner-1.jpg) no-repeat scroll 100% 10% / cover;
+	}
+	.banner_content{
+        margin-bottom: 0px;
+        margin-top: 10px;
+		h4{
+			font-size: 60px;
+			line-height: 66px;
+			font-weight: bold;
+			color: #fff;
+			font-family: $pop;
+		}
+		p{
+			font-size: 16px;
+			padding: 0px;
+			margin-bottom: 35px;
+		}
+        .btn_hover{
+            border-radius: 0px;
+            background: #fff;
+            border-color: #fff;
+            &:hover{
+                background: $light_blue;
+                border-color: $light_blue;
+                color: #fff;
+            }
+        }
+	}
+}
+.f_48{
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.bg-parallax{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 125%;
+    z-index: -1;
+    opacity: 0.50;
+}
+
+.blog_banner_two{
+    padding: 187px 0px 104px;
+    background: #04091e;
+    .bg-parallax{
+		background: url(../image/blog/banner-2.jpg) no-repeat scroll center top / cover;
+	}
+}
+/*=============End Blog Banner css =============*/

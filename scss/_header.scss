@@ -1,0 +1,172 @@
+//header_area css
+.header_area{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left:0;
+    z-index: 99;
+    transition: background 0.4s, all 0.3s linear;
+    .navbar{
+        background: transparent;
+        padding: 0px;
+        border: 0px;
+        border-radius: 0px;
+        .nav{
+            .nav-item{
+                .nav-link{
+                    font: 500 12px/70px $pop;
+                    text-transform: uppercase;
+                    color: $dark;
+                    padding: 0px;
+                    display: inline-block;
+                    margin-right: 44px;
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:hover, &.active{
+                    .nav-link{
+                        color: $light_blue;
+                    }
+                }
+                &.submenu{
+                    position: relative;
+                    ul{
+                        border: none;
+                        padding: 0px;
+                        border-radius: 0px;
+                        box-shadow: none;
+                        margin: 0px;
+                        background: #fff;
+                        @media (min-width: 992px){
+                            position: absolute;
+                            top: 120%;
+                            left: 0px;
+                            min-width: 200px;
+                            text-align: left;
+                            opacity: 0;
+                            transition: all 300ms ease-in;
+                            visibility: hidden;
+                            display: block;
+                            border: none;
+                            padding: 0px;
+                            border-radius: 0px;
+                        }
+                        &:before{
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 10px 10px 0 10px;
+                            border-color: #eeeeee transparent transparent transparent;
+                            position: absolute;
+                            right: 24px;
+                            top: 45px;
+                            z-index: 3;
+                            opacity: 0;
+                            transition: all 400ms linear;
+                        }
+                        .nav-item{
+                            display: block;
+                            float: none;
+                            margin-right: 0px;
+                            border-bottom: 1px solid #ededed;
+                            margin-left: 0px;
+                            transition: all 0.4s linear;
+                            .nav-link{
+                                line-height: 45px;
+                                color: $dark;
+                                padding: 0px 30px;
+                                transition: all 150ms linear;
+                                display: block;
+                                margin-right: 0px;
+                            }
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                            &:hover{
+                                .nav-link{
+                                    background: #f9f9ff;
+                                    color: $light_blue;
+                                }
+                            }    
+                        }
+                    }
+                    &:hover{
+                        ul{
+                            @media (min-width: 992px){
+                                visibility: visible;
+                                opacity: 1;
+                                top: 100%;
+                            }
+                            .nav-item{
+                                margin-top: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .search{
+            font-size: 12px;
+            line-height: 60px;
+            display: inline-block;
+            color: $dark;
+            margin-left: 43px;
+            i{
+                font-weight: 600;
+            }
+        }
+    }
+    & + section{
+        margin-top: 100px;
+    }
+    
+    &.navbar_fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: background 0.4s, all 0.3s linear;
+        .header_top{
+            display: none;
+        }
+        .navbar{
+            background: #fff;
+        }
+    }
+}
+.header_top{
+    .social_icon{
+        li{
+            a{
+                font-size: 12px;
+                line-height: 30px;
+                color: #cccccc;
+                width: 30px;
+                height: 30px;
+                background: #f9f9ff;
+                display: inline-block;
+                text-align: center;
+                &:hover{
+                    background: $light_blue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .top_btn{
+        a{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 30px;
+            padding: 0px 32px;
+            background: #f9f9ff;
+            color: #777;
+            &:hover{
+                background: $light_blue;
+                color: #fff;
+            }
+        }
+    }
+}
